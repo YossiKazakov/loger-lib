@@ -1,0 +1,19 @@
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\bin\Debug\netstandard2.0\LoggerLib.deps.json
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\bin\Debug\netstandard2.0\LoggerLib.dll
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\bin\Debug\netstandard2.0\LoggerLib.pdb
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.csprojAssemblyReference.cache
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.AssemblyInfoInputs.cache
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.AssemblyInfo.cs
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.csproj.CoreCompileInputs.cache
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.dll
+C:\Users\osnat.arbel\OneDrive - Zerto\Documents\Interviews\LoggerLibC#\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.pdb
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\bin\Debug\netstandard2.0\LoggerLib.deps.json
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\bin\Debug\netstandard2.0\LoggerLib.dll
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\bin\Debug\netstandard2.0\LoggerLib.pdb
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.csproj.AssemblyReference.cache
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.AssemblyInfoInputs.cache
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.AssemblyInfo.cs
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.csproj.CoreCompileInputs.cache
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.dll
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.0\LoggerLib.pdb

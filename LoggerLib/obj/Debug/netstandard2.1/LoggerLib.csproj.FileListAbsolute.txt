@@ -1,0 +1,10 @@
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\bin\Debug\netstandard2.1\LoggerLib.deps.json
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\bin\Debug\netstandard2.1\LoggerLib.dll
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\bin\Debug\netstandard2.1\LoggerLib.pdb
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.1\LoggerLib.csproj.AssemblyReference.cache
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.1\LoggerLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.1\LoggerLib.AssemblyInfoInputs.cache
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.1\LoggerLib.AssemblyInfo.cs
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.1\LoggerLib.csproj.CoreCompileInputs.cache
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.1\LoggerLib.dll
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerLib\obj\Debug\netstandard2.1\LoggerLib.pdb

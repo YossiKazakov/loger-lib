@@ -1,0 +1,2 @@
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\obj\Debug\netcoreapp3.1\LoggerTest.dll
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\obj\Debug\netcoreapp3.1\LoggerTest.pdb
