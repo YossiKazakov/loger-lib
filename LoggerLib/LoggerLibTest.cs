@@ -5,7 +5,7 @@ using LoggerLib.Filters;
 
 namespace LoggerLib
 {
-    class LoggerLibTest
+    internal static class LoggerLibTest
     {
         static void Main(string[] args)
         {

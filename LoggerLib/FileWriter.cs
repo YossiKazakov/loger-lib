@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading;
 
+namespace LoggerLib;
+
 public class FileWriter : IFileWriter
 {
     public void Write(string line)

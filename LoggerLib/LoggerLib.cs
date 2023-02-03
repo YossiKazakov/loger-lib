@@ -1,4 +1,5 @@
 ﻿#nullable enable
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -63,7 +64,7 @@ namespace LoggerLib
                 var messageToSend = _messages.Dequeue();
 
                 //Write through the Filter Writer
-                _mFileWriter.Write(Thread.CurrentThread.ManagedThreadId + " " + messageToSend);
+                _mFileWriter.Write($"{Environment.CurrentManagedThreadId} {messageToSend}");
             }
         }
 

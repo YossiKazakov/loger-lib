@@ -1,6 +1,6 @@
 ﻿namespace LoggerLib
 {
-    interface ILoggerLib
+    internal interface ILoggerLib
     {
         void PrintLogLine(string message);
 
