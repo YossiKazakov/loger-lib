@@ -1,4 +1,6 @@
-﻿namespace LoggerLib;
+﻿using System.Threading.Tasks;
+
+namespace LoggerLib;
 
 public interface IFileWriter
 {

@@ -5,7 +5,7 @@ using LoggerLib.Filters;
 
 namespace LoggerLib
 {
-    internal static class LoggerLibTest
+    class LoggerLibTest
     {
         static void Main(string[] args)
         {
@@ -16,6 +16,7 @@ namespace LoggerLib
                 new AddDateFilter()
             };
             ILoggerLib logger = new LoggerLib(fileWriter, filters);
+
             for (int i = 0; i < 100; i++)
             {
                 logger.PrintLogLine($"Number {i} \n");
@@ -23,7 +24,7 @@ namespace LoggerLib
                 // Delay client printing
                 Thread.Sleep(10);
             }
-            
+
             logger.WaitForThePrintsToFinish();
             // Console.ReadLine();
         }
