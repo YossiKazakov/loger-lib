@@ -11,26 +11,29 @@ namespace LoggerLib
 {
     public class LoggerLib : ILoggerLib
     {
+        //Producer-Consumer queue of logs
         private readonly ConcurrentQueue<string> _messages = new();
-
+        
+        //Dummy object to lock when performing writing
         private readonly object _writingLock = new();
+        
+        //Signal when a log has been enqueued
         private readonly AutoResetEvent _readyToWriteSignal = new(false);
+        
+        //Signal when the queue is empty 
         private readonly AutoResetEvent _workDoneSignal = new(false);
 
+        //Writing will be performed by this object
+        private readonly IFileWriter _fileWriter;
 
-        private readonly IFileWriter _mFileWriter;
-
-        //Filters
+        //Log filters to apply to each log
         private readonly List<ILogFilter>? _logFilters;
 
         public LoggerLib(IFileWriter fileWriter, List<ILogFilter>? logFilters)
         {
-            _mFileWriter = fileWriter;
+            _fileWriter = fileWriter;
             _logFilters = logFilters;
             Task.Run(DoWork);
-            // new Thread(DoWork) { IsBackground = true }.Start();
-            // new Thread(DoWork) { IsBackground = true }.Start();
-            // new Thread(DoWork) { IsBackground = true }.Start();
         }
 
         private string ApplyFilters(string message)
@@ -68,7 +71,7 @@ namespace LoggerLib
                 _messages.TryDequeue(out var messageToSend);
 
                 //Write through the Filter Writer
-                _mFileWriter.Write($"{Environment.CurrentManagedThreadId} {messageToSend}");
+                _fileWriter.Write($"{Environment.CurrentManagedThreadId} {messageToSend}");
             }
         }
 
