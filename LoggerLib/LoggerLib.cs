@@ -14,7 +14,7 @@ namespace LoggerLib
         private readonly ConcurrentQueue<string> _messages = new();
 
         private readonly object _writingLock = new();
-        private readonly AutoResetEvent _mSignal = new(false);
+        private readonly AutoResetEvent _readyToWriteSignal = new(false);
         private readonly AutoResetEvent _workDoneSignal = new(false);
 
 
@@ -57,7 +57,7 @@ namespace LoggerLib
             _messages.Enqueue(message);
 
             //Signal the waiting thread(s) that there is a new message to process
-            _mSignal.Set();
+            _readyToWriteSignal.Set();
         }
 
         private void DequeueAndWriteMessages()
@@ -83,7 +83,7 @@ namespace LoggerLib
             while (true)
             {
                 //Thread(s) waiting for the signal to be set
-                _mSignal.WaitOne();
+                _readyToWriteSignal.WaitOne();
                 
                 //Has to be locked, otherwise logs can be printed in the wrong order
                 lock (_writingLock)
