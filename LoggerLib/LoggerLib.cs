@@ -38,7 +38,7 @@ namespace LoggerLib
             if (_logFilters == null)
                 return message;
 
-            foreach (var filter in _logFilters) //TODO Could be null
+            foreach (var filter in _logFilters)
             {
                 message = filter.Filter(message);
             }
