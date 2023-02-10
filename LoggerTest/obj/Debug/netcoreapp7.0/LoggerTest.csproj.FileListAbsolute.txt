@@ -94,3 +94,8 @@ C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\obj\Debug\n
 C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\obj\Debug\netcoreapp7.0\LoggerTest.pdb
 C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\obj\Debug\netcoreapp7.0\LoggerTest.genruntimeconfig.cache
 C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\obj\Debug\netcoreapp7.0\ref\LoggerTest.dll
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\bin\Debug\netcoreapp7.0\LoggerLib.deps.json
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\bin\Debug\netcoreapp7.0\LoggerLib.runtimeconfig.json
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\bin\Debug\netcoreapp7.0\LoggerLib.exe
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\bin\Debug\netcoreapp7.0\LoggerLib.dll
+C:\Users\yossi\OneDrive\שולחן העבודה\LoggerLib\LoggerTest\bin\Debug\netcoreapp7.0\LoggerLib.pdb

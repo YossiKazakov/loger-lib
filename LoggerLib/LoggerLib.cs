@@ -29,7 +29,7 @@ namespace LoggerLib
         //Log filters to apply to each log
         private readonly List<ILogFilter>? _logFilters;
 
-        public LoggerLib(IFileWriter fileWriter, List<ILogFilter>? logFilters)
+        public LoggerLib(IFileWriter fileWriter, List<ILogFilter>? logFilters = null)
         {
             _fileWriter = fileWriter;
             _logFilters = logFilters;
@@ -71,7 +71,7 @@ namespace LoggerLib
                 _messages.TryDequeue(out var messageToSend);
 
                 //Write through the Filter Writer
-                _fileWriter.Write($"{Environment.CurrentManagedThreadId} {messageToSend}");
+                _fileWriter.Write(messageToSend);
             }
         }
 
