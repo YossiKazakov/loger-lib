@@ -13,13 +13,13 @@ namespace LoggerLib
     {
         //Producer-Consumer queue of logs
         private readonly ConcurrentQueue<string> _messages = new();
-        
+
         //Dummy object to lock when performing writing
         private readonly object _writingLock = new();
-        
+
         //Signal when a log has been enqueued
         private readonly AutoResetEvent _readyToWriteSignal = new(false);
-        
+
         //Signal when the queue is empty 
         private readonly AutoResetEvent _workDoneSignal = new(false);
 
@@ -36,6 +36,16 @@ namespace LoggerLib
             Task.Run(DoWork);
         }
 
+        public void AddFilter(ILogFilter filter)
+        {
+            _logFilters?.Add(filter);
+        }
+
+        public void RemoveFilter(ILogFilter filter)
+        {
+            _logFilters?.Remove(filter);
+        }
+
         private string ApplyFilters(string message)
         {
             if (_logFilters == null)
@@ -49,7 +59,7 @@ namespace LoggerLib
             return message;
         }
 
-        
+
         public void PrintLogLine(string message)
         {
             //Filter the log
@@ -87,12 +97,13 @@ namespace LoggerLib
             {
                 //Thread(s) waiting for the signal to be set
                 _readyToWriteSignal.WaitOne();
-                
+
                 //Has to be locked, otherwise logs can be printed in the wrong order
                 lock (_writingLock)
                 {
                     DequeueAndWriteMessages();
                 }
+
                 SignalIfWorkIsDone();
             }
         }
@@ -103,4 +114,3 @@ namespace LoggerLib
         }
     }
 }
-

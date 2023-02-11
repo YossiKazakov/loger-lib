@@ -10,7 +10,7 @@ namespace LoggerLib
         static void Main(string[] args)
         {
             IFileWriter fileWriter = new FileWriter();
-            List<ILogFilter> filters = new List<ILogFilter>
+            var filters = new List<ILogFilter>
             {
                 new RemoveSpecialCharactersFilter(),
                 new AddDateFilter()
