@@ -37,8 +37,10 @@ namespace LoggerTest
             Enumerable.Range(0, NumberOfLogs).Select(i => i.ToString()).ToList();
 
 
-        private static List<string> SetupTestAndReturnResults(int serverPrintingDelay = 0,
-            int clientPrintingDelay = 0, List<string> messagesToActOn = null,
+        private static List<string> SetupTestAndReturnResults(
+            int serverPrintingDelay = 0,
+            int clientPrintingDelay = 0,
+            List<string> messagesToActOn = null,
             List<ILogFilter> filters = null)
         {
             //Arrange
