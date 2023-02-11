@@ -9,6 +9,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace LoggerTest
 {
     internal class TestFileWriter : IFileWriter
+    //Fake FileWriter class that enables to store the given messages
     {
         private readonly int _serverPrintingDelay;
 
@@ -19,8 +20,7 @@ namespace LoggerTest
             _serverPrintingDelay = serverPrintingDelay;
             LogOutputList = new List<string>();
         }
-
-
+        
         public void Write(string line)
         {
             LogOutputList.Add(line);

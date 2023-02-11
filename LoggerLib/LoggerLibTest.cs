@@ -7,7 +7,7 @@ namespace LoggerLib
 {
     class LoggerLibTest
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             IFileWriter fileWriter = new FileWriter();
             var filters = new List<ILogFilter>
